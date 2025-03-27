@@ -1,73 +1,64 @@
-Billing System for Velavan Super Stores
- 
+🚀 Project Overview:
+
  Deployment link 👇
  https://billing-and-stock-management-system.vercel.app/
  
-Frontend:
+🎨 Frontend
+Built with React ⚛️ (Functional Components & Hooks)
 
-Built with React using functional components and hooks
-
-State management using React's useState and useEffect
+State Management using useState & useEffect
 
 Modern UI with:
 
-Framer Motion for animations
+🎭 Framer Motion for animations
 
-Responsive design for all screen sizes
+📱 Responsive design for all screen sizes
 
-Scrollable modals for mobile compatibility
+🔄 Scrollable modals for mobile compatibility
 
-Backend Integration
+⚙️ Backend Integration
+🛢 Supabase for database operations
 
-Supabase for database operations
+🔄 Real-time data sync
 
-Real-time data synchronization
+📊 Custom SQL functions for inventory management
 
-Custom SQL functions for inventory management
+📄 PDF Generation
+🖨 jsPDF for professional invoices
 
-PDF Generation
+📑 jspdf-autotable for well-formatted tables
 
-jsPDF library for creating professional invoices
+🧾 Automatic tax calculations
 
-jspdf-autotable for well-formatted product tables
+🔗 QR Code Payments
+🏦 UPI QR Code generation (qrcode.react)
 
-Automatic tax calculations
+💰 Pre-filled payment amount
 
-QR Code Payments
+🆔 UPI ID: sabarivasan1239@okhdfcbank
 
-Dynamic UPI QR code generation using qrcode.react
+⚠️ Error Handling
+🛡 Robust error handling for database operations
 
-Pre-filled payment amount
+🛠 Graceful fallbacks for missing columns
 
-Display of UPI ID (sabarivasan1239@okhdfcbank)
+🔔 User-friendly error messages
 
-Error Handling
-
-Robust error handling for database operations
-
-Graceful fallbacks for missing database columns
-
-User-friendly error messages  
-
-Database Schema
-The system uses two main tables:
-
-Products Table
-
-Copy
-- id (primary key)
-- name
-- price
-- quantity
-- category
-- created_at
-Transactions Table
-
-Copy
-- id (primary key)
-- customer_name
-- customer_phone
-- total_amount
-- payment_method (optional)
-- items (JSON array of purchased items)
-- created_at
+🗄 Database Schema
+📦 Products Table
+Column	Type
+id	Primary Key
+name	String
+price	Number
+quantity	Number
+category	String
+created_at	Timestamp
+💳 Transactions Table
+Column	Type
+id	Primary Key
+customer_name	String
+customer_phone	String
+total_amount	Number
+payment_method	String (Optional)
+items	JSON Array (Purchased Items)
+created_at	Timestamp
